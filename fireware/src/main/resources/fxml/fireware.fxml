@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="742.0" style="-fx-accent: green;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label layoutX="24.0" layoutY="27.0" prefHeight="17.0" prefWidth="56.0" text="Level :" />
+    <TextField layoutX="63.0" layoutY="23.0" prefHeight="25.0" prefWidth="35.0" />
+    <Separator orientation="VERTICAL" prefHeight="200.0" />
+    <Separator layoutX="225.0" orientation="VERTICAL" prefHeight="440.0" prefWidth="6.0" />
+    <Separator layoutX="522.0" orientation="VERTICAL" prefHeight="440.0" prefWidth="6.0" />
+    <Button fx:id="start" layoutX="316.0" layoutY="316.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="112.0" text="Start emulation!" />
+    <Separator layoutX="-2.0" layoutY="67.0" prefHeight="3.0" prefWidth="229.0" style="-fx-background-color: #FFF;" />
+    <CheckBox fx:id="watterSuply" layoutX="535.0" layoutY="322.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" text="Watter suply" />
+    <Label layoutX="535.0" layoutY="229.0" prefHeight="17.0" prefWidth="72.0" text="Extinguishers" />
+    <TextField fx:id="extinguishersCount" layoutX="648.0" layoutY="225.0" prefHeight="25.0" prefWidth="35.0" text="5" />
+    <Label layoutX="76.0" layoutY="240.0" text="Last messages:" />
+    <Separator layoutX="-2.0" layoutY="237.0" prefHeight="3.0" prefWidth="229.0" style="-fx-background-color: #FFF;" />
+    <TextArea layoutX="11.0" layoutY="257.0" prefHeight="178.0" prefWidth="212.0" text="Your stairs have too small width!&#10;_____________________________________&#10;Your studets were only at 1 lesson &#10;of  fireware per week! &#10;_____________________________________" />
+    <CheckBox fx:id="isEmergencyFast" layoutX="535.0" layoutY="353.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="129.0" text="Emergency is fast" />
+    <Label layoutX="535.0" layoutY="261.0" prefHeight="17.0" prefWidth="112.0" text="Fire outs count" />
+    <TextField fx:id="fireOutsCount" layoutX="648.0" layoutY="257.0" prefHeight="25.0" prefWidth="35.0" text="5" />
+    <ProgressBar layoutX="271.0" layoutY="369.0" prefWidth="200.0" progress="0.24" style="-fx-background-color: green;" />
+    <Label layoutX="252.0" layoutY="399.0" prefHeight="17.0" prefWidth="101.0" text="Result of test: " />
+    <TextField fx:id="result" layoutX="345.0" layoutY="395.0" prefHeight="25.0" prefWidth="148.0" text="Succsess!" />
+    <Label layoutX="535.0" layoutY="387.0" prefHeight="17.0" prefWidth="155.0" text="Some more properties..." />
+    <Button fx:id="choosePlan" layoutX="245.0" layoutY="23.0" mnemonicParsing="false" text="Choose plan" />
+    <Button fx:id="randomPlan" layoutX="419.0" layoutY="23.0" mnemonicParsing="false" text="Random plan" />
+    <Label  layoutX="535.0" layoutY="27.0" prefHeight="17.0" prefWidth="101.0" text="Today in school:" />
+    <TextField fx:id="peopleInSchool"layoutX="649.0" layoutY="23.0" prefHeight="25.0" prefWidth="35.0" text="100" />
+    <Label layoutX="535.0" layoutY="68.0" prefHeight="17.0" prefWidth="101.0" text="Teachers: " />
+    <TextField fx:id="teachers" layoutX="649.0" layoutY="64.0" prefHeight="25.0" prefWidth="35.0" text="7" />
+    <Label layoutX="535.0" layoutY="106.0" prefHeight="17.0" prefWidth="101.0" text="Fire type: " />
+    <Label layoutX="535.0" layoutY="145.0" prefHeight="17.0" prefWidth="101.0" text="Fire force: " />
+    <Label layoutX="535.0" layoutY="195.0" prefHeight="17.0" prefWidth="101.0" text="Floor" />
+    <TextField fx:id="floorNumber" layoutX="649.0" layoutY="191.0" prefHeight="25.0" prefWidth="35.0" text="3" />
+    <Button fx:id="setRandomValues" layoutX="54.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Set random  values" />
+    <Button fx:id="showChart" layoutX="54.0" layoutY="115.0" mnemonicParsing="false" prefWidth="129.0" text="Show statistics chart" />
+    <Button fx:id="getLessons" layoutX="54.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Get fire lessons" />
+    <Button fx:id="visitWebsite" layoutX="55.0" layoutY="191.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Visit our website -&gt;" />
+    <Label layoutX="535.0" layoutY="291.0" prefHeight="17.0" prefWidth="101.0" text="Square" />
+    <TextField fx:id="square" layoutX="649.0" layoutY="287.0" prefHeight="25.0" prefWidth="35.0" text="50" />
+    <ChoiceBox fx:id="fireType" layoutX="632.0" layoutY="104.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox fx:id="fireForce" layoutX="632.0" layoutY="142.0" prefHeight="21.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="1" />
+          <String fx:value="2" />
+          <String fx:value="3" />
+
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ImageView fitHeight="196.61568471080852" fitWidth="277.0" layoutX="234.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+    </ImageView>
+  </children>
+</AnchorPane>
